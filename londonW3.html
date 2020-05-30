@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+
+    <h2 class="w3-padding-64 w3-text-white"><b>London<br>as a<br>Smart<br>Sustainable<br>City</b></h2>
+
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()"class="w3-bar-item w3-button w3-hover-white w3-text-white">Introduction</a>
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Market</a>
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Smart Waste</a>
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Smart Energy</a>
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Smart Water</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Comment</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-grey w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-grey w3-margin-right" onclick="w3_open()">☰</a>
+  <span class="w3-text-white">London as a Smart Sustainable City</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+
+
+
+  <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+    <img src="london.jpeg" alt="Architecture" width="900" height="500">
+    <div class="w3-display-middle w3-margin-top w3-center">
+      <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>LDN</b></span><br><br><span class="w3-hide-small w3-text-light-grey">AS A SMART SUSTAINABLE CITY</span></h1>
+    </div>
+  </header>
+<br>
+<br>
+<div class="w3-container">
+  <p> As the Internet of Things (IoT) market is continuously growing, the potential for smart city development has to be considered. Furthermore, protecting the environment is one of the most important challenges nowadays, thus a lot of consideration has to be put into maximizing the sustainability of a city. This is report seizing London’s potential for smart sustainable development. The piece is divided under three main sectors: smart waste, smart energy and smart water. The analysis is done based on the government’s initiative, as well as projects developed by major companies that seek innovation within the current system. Potential developments and issues are discussed that could eventually be integrated in a sustainability dashboard that manages the whole ecosystem.  </p>
+</div>
+<br>
+  <!-- Header -->
+  <div class="w3-container"  id="showcase">
+
+    <h1 class="w3-xxxlarge w3-text-grey"><b>Market.</b></h1>
+    <hr style="width:50px;border:5px solid grey" class="w3-round">
+
+  </div>
+
+<!--marketsize by 4 sectors-->
+
+  <div class="w3-row-padding">
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-green">
+
+        <div class="w3-container">
+          <h3>Smart Waste</h3>
+          <p class="w3-opacity">market size</p>
+          <h1>$1.8 bn</h1>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-blue">
+
+        <div class="w3-container">
+          <h3>Smart Energy</h3>
+          <p class="w3-opacity">market size</p>
+          <h1>$2.1 bn</h1>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-red">
+
+        <div class="w3-container">
+          <h3>Smart Water</h3>
+          <p class="w3-opacity">market size</p>
+          <h1>$1.8 bn</h1>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+<div class="w3-container">
+<p> According to the Greater London Authority (GLA) the market for smart city technologies could reach 13.4bn US$ by 2020, which approximately represents 1% of the total global market. The study indicates that around half of the value, which is rounded to be 7bn US$, belongs to industry areas such as: smart waste, smart energy and waste management. In addition to this, smart transport and health assisted living have the same growing potential. However, this study focuses on the first three latter developments.</p>
+</div>
+<div class="w3-container" >
+<h3> London 2020 Smart City Market Potential </h3>
+</div>
+
+
+
+<div class="w3-container">
+
+
+  <head>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+          var data = google.visualization.arrayToDataTable([
+            ['Industry', 'Market Share'],
+            ['Energy',     2.1],
+            ['Infrastructure',      1.9],
+            ['Transport/ Mobility',  1.1],
+            ['Health& Assisted Living', 2],
+            ['Government, Security, Buildings',    6.8]
+          ]);
+
+          var options = {
+            title: 'value in US$ billion'
+          };
+
+          var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+          chart.draw(data, options);
+        }
+      </script>
+    </head>
+    <body>
+      <div id="piechart" style="width: 900px; height: 500px;"></div>
+    </body>
+
+<p class="w3-opacity w3-text-black">Source: <a href="https://www.arup.com/perspectives/publications/research/section/smart-city-opportunities-for-london"> Arup</a></p>
+
+</div>
+
+
+
+
+
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-green"><b>Smart Waste.</b></h1>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+
+    <p> For the past seven years, the City of London has developed a plan to ensure London’s permanent care and growth of the system that is taking care of managing the waste, under the initiative “The city of London Waste Strategy 2013-2020”.  In 2011 the Mayor creates a strategy, under the name “London’s Wasted Resource”, where the subsequent goals are followed:
+    </p>
+
+    <div class="w3-col m10 w3-margin-bottom">
+      <div class="w3-green">
+
+        <div class="w3-container">
+
+          <p class="w3-text-white"> ■ Achieve zero municipal waste direct to landfill by 2025</p>
+          <p class="w3-text-white"> ■ Reduce the amount of household waste produced in 2008/09 from 970kg to 790kg per household by 2031 </p>
+          <p class="w3-text-white"> ■ Increase London’s capacity to reuse or repair municipal waste from approximately 6,000 tonnes per annum in 2008 to 40,000 in 2012 and 120,000 in 2031</p>
+          <p class="w3-text-white"> ■ Recycle or compost at least 45% of municipal waste by 2015, 50% by 2020 and 60% 2031</p>
+          <p class="w3-text-white"> ■ The management of London’s municipal waste to achieve annual greenhouse gas emissions savings of approximately: 1.2 million tonnes of CO2eq in 2015 1.4 million tonnes of CO2eq in 2020 1.6 million tonnes of CO2eq in 2031 </p>
+          <p class="w3-text-white"> ■ To generate as much energy as possible from London’s organic and non-recyclable waste in a way that is no more polluting in carbon terms than the energy source it is replacing. This is estimated to be possible for about 40% of London’s municipal waste after recycling or composting targets are achieved by 2031</p>
+
+          <p class="w3-opacity w3-text-white">Credits:<a href="https://www.london.gov.uk/sites/default/files/municipal_waste_final.pdf"> The Mayor's Municipial Waste Management Strategy </a> </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="w3-container">
+
+
+    <p> Another strategy undertaken by the Mayor underlines the importance of managing the municipal waste locally in order to act accordingly to the maximum net self-sufficiency by 2031 goal disclosed in The London Plan. The latter strategy consists of six planning policies that involve waste issues across all London: </p>
+
+    <div class="w3-col m10 w3-margin-bottom">
+      <div class="w3-green">
+
+        <div class="w3-container">
+
+          <p class="w3-text-white"> ■Policy One: Informing producers and consumers of the value of reducing, reusing and recycling municipal waste</p>
+          <p class="w3-text-white"> ■ Policy Two: Reducing the climate change impact of London’s municipal waste management</p>
+          <p class="w3-text-white"> ■ Policy Three: Capturing the economic benefits of municipal waste management </p>
+          <p class="w3-text-white"> ■ Policy Four: Achieving high recycling or composting rates resulting in the greatest environmental and financial benefits</p>
+          <p class="w3-text-white"> ■ Policy Five: Stimulating the development of new municipal waste management infrastructure, particularly low carbon technologies </p>
+          <p class="w3-text-white"> ■ Policy Six: Achieving a high level of street cleanliness</p>
+
+          <p class="w3-opacity w3-text-white"> Credits:<a href="https://www.london.gov.uk/sites/default/files/municipal_waste_final.pdf"> The Mayor's Municipial Waste Management Strategy </a></p>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="w3-container">
+
+
+<h3> Commercial Waste </h3>
+
+<p> The Waste Management of the city is divided in two parts: commercial waste and residential waste. The commercial waste is not provided by a singular service, but with a series of operators which should have a contract with businesses in order to collect the respective waste.  The City of London recommends the following waste companies as appropriate collection points:</p>
+
+
+<head>
+  <style>
+     /* Set the size of the div element that contains the map */
+    #map {
+      height: 400px;  /* The height is 400 pixels */
+      width: 100%;  /* The width is the width of the web page */
+     }
+  </style>
+</head>
+<body>
+  <h3>Waste Collection Services London Map</h3>
+  <!--The div element for the map -->
+  <div id="map"></div>
+  <script>
+// Initialize and add the map
+function initMap() {
+// The location of Uluru
+
+  var veolia = {lat: 	51.482333, lng: 	-0.057034};
+  var first = {lat: 	51.550777, lng: 	-0.097289};
+  var biffa = {lat: 	51.619690, lng: 	-0.039847};
+  var business = {lat: 	52.217458, lng: 	-0.877647};
+  var hart = {lat: 	51.482333, lng: 	-0.057034};
+  var simply = {lat: 	51.550777, lng: 	-0.097289};
+  var loop = {lat: 	51.552673, lng: 	-0.021644};
+  var hosier = {lat: 	51.568065, lng: 	-0.228703};
+  var everyday = {lat: 	51.515260, lng: 	-0.175596};
+  var red = {lat: 	51.521507, lng: 	-0.047928};
+  var orion = {lat: 	51.519038, lng: 	-0.001576};
+  var giraffe = {lat: 	51.479699, lng: 	-0.127584};
+  var bpr = {lat: 	51.500896, lng: 	-0.095853};
+  var rts = {lat: 	51.484980, lng: 	-0.050444};
+  var bywaters = {lat: 	51.522324, lng: 	-0.006471};
+  var magnum = {lat: 	51.517133, lng: 	-0.084157};
+  var envirotec = {lat: 	51.434364, lng: 	0.177244};
+// The map, centered at Uluru
+var map = new google.maps.Map(
+    document.getElementById('map'), {zoom: 10, center: veolia});
+// The marker, positioned at Uluru
+var marker = new google.maps.Marker({position: veolia, map: map});
+var marker = new google.maps.Marker({position: first, map: map});
+var marker = new google.maps.Marker({position: biffa, map: map});
+var marker = new google.maps.Marker({position: business, map: map});
+var marker = new google.maps.Marker({position: hart, map: map});
+var marker = new google.maps.Marker({position: simply, map: map});
+var marker = new google.maps.Marker({position: loop, map: map});
+var marker = new google.maps.Marker({position: hosier, map: map});
+var marker = new google.maps.Marker({position: everyday, map: map});
+var marker = new google.maps.Marker({position: red, map: map});
+var marker = new google.maps.Marker({position: orion, map: map});
+var marker = new google.maps.Marker({position: giraffe, map: map, title: "hello!"});
+var marker = new google.maps.Marker({position: bpr, map: map, title: "hello!"});
+var marker = new google.maps.Marker({position: rts, map: map, title: "hello!"});
+var marker = new google.maps.Marker({position: bywaters, map: map, title: "hello!"});
+var marker = new google.maps.Marker({position: magnum, map: map, title: "hello!" });
+var marker = new google.maps.Marker({position: envirotec, map: map, title: "hello!"});
+
+
+var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h4 id="firstHeading" class="firstHeading">Veolia Environmental Services</h4>'+
+            '<div id="bodyContent">'+
+            '<p><b> contact nr:</b> 0845 606 0460 </p> ' +
+            '</div>'+
+            '</div>';
+
+
+
+      var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+
+        var marker = new google.maps.Marker({
+          position: veolia,
+          map: map,
+          title: 'Veolia Environmental Services'
+        });
+
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+
+
+      }
+
+
+  </script>
+  <!--Load the API from the specified URL
+  * The async attribute allows the browser to render the page while the API loads
+  * The key parameter will contain your own API key (which is not needed for this tutorial)
+  * The callback parameter executes the initMap() function
+  -->
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP0lzckQHnqcW2rZqz6CEnaBRjrXZoUbY&callback=initMap">
+  </script>
+</body>
+<br>
+<p> However, based on a survey undertaken by the Catalyst Corporate Finance in 2018 the top three companies of waste management in United Kingdom are: Veolia Environment Services, Biffa Group and Suez Environment UK. The combined worth of the three companies is 3.4 billion GBP, with the leading revenue of Veolia Environmental Services which is 1.5 billion GBP.</p>
+
+<br>
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawStuff);
+
+      function drawStuff() {
+        var data = new google.visualization.arrayToDataTable([
+          ['Company', 'Value'],
+          ["Veolia Environmental Services", 1500],
+          ["Biffa Group", 1076.7],
+          ["Suez Environment UK", 798],
+          ["Viridor (Pennon Group)", 788.9],
+          ["FCC Environment (FCC)", 670.4],
+          ["Amey Environmental (Ferrovial)", 336],
+          ["DS Smith Recycling UK", 283.8],
+          ["Renewi", 176.4],
+          ["SRCL (Stericycle)", 166],
+          ["Enva group", 148]
+        ]);
+
+        var options = {
+          title: 'Leading UK waste management service companies by revenue (2017-2018)',
+          width: 900,
+          legend: { position: 'none' },
+          chart: { title: 'Leading UK waste management service companies by revenue (2017-2018)',
+                   subtitle: 'value in million GBP' },
+          bars: 'horizontal', // Required for Material Bar Charts.
+          axes: {
+            x: {
+              0: { side: 'top', label: 'million GBP'} // Top x-axis.
+            }
+          },
+          bar: { groupWidth: "90%" }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+        chart.draw(data, options);
+      };
+    </script>
+  </head>
+  <body>
+    <div id="top_x_div" style="width: 900px; height: 500px;"></div>
+  </body>
+  <p class="w3-opacity w3-text-black">Source: <a href="https://www.statista.com/statistics/298437/revenues-of-leading-uk-waste-management-services/"> Statista </a></p>
+
+
+<br>
+
+<h3> Residential Waste </h3>
+
+<p> In order to recycle your residential waste in London, all you have to do is add the respective items in your designated recycling bin. </p>
+
+
+<head>
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+   <script type="text/javascript">
+     google.charts.load('current', {'packages':['corechart']});
+     google.charts.setOnLoadCallback(drawVisualization);
+
+     function drawVisualization() {
+       // Some raw data (not necessarily accurate)
+       var data = google.visualization.arrayToDataTable([
+         ['Year', 'Household waste', 'Non-household waste'],
+         ["2000/01", 2231, 1008],
+         ["2001/02", 2262, 996],
+         ["2002/03", 2216, 1024],
+         ["2003/04", 2201, 962],
+         ["2004/05", 2081, 1011],
+         ["2005/06", 2112, 810],
+         ["2006/07", 2111, 761],
+         ["2007/08", 2013, 734],
+         ["2008/09", 1784, 749],
+         ["2009/10", 1678, 692],
+         ["2010/11", 1657, 633],
+         ["2011/12", 1598, 544],
+         ["2012/13", 1596, 522],
+         ["2013/14", 1623, 531],
+         ["2014/15", 1654, 514],
+         ["2015/16", 1673, 508],
+         ["2016/17", 1677, 537],
+         ["2017/18", 1637, 525],
+         ["2018/19", 1632, 534]
+       ]);
+
+       var options = {
+         title : 'Household waste from regular household waste and non-household waste (2000-2019)',
+         vAxis: {title: 'metric tones'},
+         hAxis: {title: 'years'},
+         seriesType: 'bars',
+         series: {5: {type: 'line'}}        };
+
+       var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+       chart.draw(data, options);
+     }
+   </script>
+ </head>
+ <body>
+   <div id="chart_div" style="width: 900px; height: 500px;"></div>
+ </body>
+
+<p class="w3-opacity w3-text-black">Source: <a href="https://www.statista.com/statistics/321604/household-waste-from-regular-household-collections-in-london-united-kingdom-uk/"> Statista </a>,<a href="https://www.statista.com/statistics/321992/household-waste-from-non-household-sources-in-london-uk/"> Statista </a></p>
+
+
+<p> The chart above is based on a survey conducted by Defra and it displays the average household waste that is accumulated from either regular household collections, or non-household sources. It can be noticed a major decrease, under two million metric tons, of normal household waste in 2008/09. Additionally, the lowest amount of average household waste was marked in 2011/12. Compared to the latter category, it can be noticed that non-household waste is by more than half less. The year which marks the lowest dropdown for non-household waste is 2015/16 with only 508 tons. </p>
+
+<div class="w3-col m10 w3-margin-bottom">
+  <div class="w3-green">
+
+    <div class="w3-container">
+
+      <p class="w3-text-white"> 4.5 million tonnes of food is wasted in the UK, costing £13.8 billion!
+</p>
+<p class="w3-opacity"> <a href="https://wrap.org.uk/sites/files/wrap/Food_%20surplus_and_waste_in_the_UK_key_facts_Jan_2020.pdf"> Wrap </a></p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="w3-container">
+
+
+
+<p>Food waste sometimes is unavoidable, nevertheless, there are several things that could be done in order to diminish this issue. According to the government the average rubbish bin is filled a third with food waste. Moreover, the households are responsible for half of the total food waste in United Kingdom, followed by industries such as: supermarkets, factories and restaurants.
+</p>
+
+</div>
+
+
+
+
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Smart Energy</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+
+    <p> According to the Arups’s report “Smart City Opportunities for London” smart energy management technologies are defined as the following:
+    </p>
+
+    <div class="w3-col m10 w3-margin-bottom">
+      <div class="w3-blue">
+
+        <div class="w3-container">
+
+          <p class="w3-text-white"> “technologies [that] can help utilities and distributors to forecast and manage loads better, reduce the need for costly infrastructure expansion, and improve service quality and customer satisfaction. Meanwhile consumers benefit from service quality reliability improvements, new tariff options, the ability to reduce their energy bills.”
+    </p>
+    <p class="w3-opacity w3-text-white"><a href="https://www.arup.com/perspectives/publications/research/section/smart-city-opportunities-for-london">BIS Report</a></p>
+
+    </div>
+    </div>
+    </div>
+
+  </div>
+
+  <div class="w3-container">
+
+    <p>The United Kingdom government sector in charge of energy management is The Department for Energy and Climate Change (DECG). Therefore, any new initiative for energy supplying must be agreed within the Energy Technology List (ETL). Such new technology proposals might include:
+    </p>
+
+    <div class="w3-col m7 w3-margin-bottom">
+      <div class="w3-blue">
+
+        <div class="w3-container">
+
+<p class="w3-text-white"> ■ Automatic power down for IT equipment</p>
+  <p class="w3-text-white"> ■ Corrosion prevention / treatment systems </p>
+    <p class="w3-text-white">■ De-areators for wet heating systems</p>
+      <p class="w3-text-white">■ Electricity generators / turbines / solar cells </p>
+        <p class="w3-text-white">■ Insulating curtains/doors for cold rooms </p>
+          <p class="w3-text-white">■ Kettles and point of use water heaters </p>
+            <p class="w3-text-white">■ Low loss valves for steam systems etc. </p>
+              <p class="w3-text-white">■ Lubricants, fuel additives, novel fuels etc. </p>
+              <p class="w3-text-white">■ Mechanical clutches, gearboxes, seals etc. </p>
+                <p class="w3-text-white">■ Remote controls for electrical equipment </p>
+                  <p class="w3-text-white">■ Software for analysing energy/carbon use </p>
+                    <p class="w3-text-white">■ Water treatment plant (legionella control) </p>
+
+
+    <p class="w3-opacity w3-text-white">Credits: <a href="https://www.gov.uk/government/publications/energy-technology-list-etl-new-technology-proposal-form"> Gov.uk </a></p>
+
+    </div>
+    </div>
+    </div>
+
+  </div>
+
+<div class="w3-container">
+
+  <p> According to Arup’s study on of the main problems in the smart energy sector is the high use fossil fuels which leads to climate change. Consequently, in order to diminish this issue, London has to find new cleaner sources of energy. However, the price of fuel should not raise in order to be adapted by the consumers.
+  </p>
+
+
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+        google.charts.load('current', {'packages':['line']});
+        google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = new google.visualization.DataTable();
+        data.addColumn('number', 'Year');
+        data.addColumn('number', 'Greenhouse Gas Emissions');
+
+
+        data.addRows([
+          [2009,  41.1],
+          [2010,  43.1],
+          [2011,  43.4],
+          [2012,  40.6],
+          [2013,  37.4],
+          [2014,   33.8],
+          [2015,   31.7],
+          [2016,  32],
+          [2017,  30.6],
+          [2018, 28.2],
+          [2019,  26.4],
+
+        ]);
+
+        var options = {
+          chart: {
+            title: "Rio Tinto's greenhouse gas emissions (2009-2019)",
+            subtitle: "in million metric tons"
+          },
+          width: 900,
+          height: 500,
+          axes: {
+            x: {
+              0: {side: 'top'}
+            }
+          }
+        };
+
+        var chart = new google.charts.Line(document.getElementById('line_top_x'));
+
+        chart.draw(data, google.charts.Line.convertOptions(options));
+      }
+    </script>
+  </head>
+  <body>
+    <div id="line_top_x"></div>
+  </body>
+
+<p class="w3-opacity"> Source: <a href="https://www.statista.com/statistics/272484/rio-tintos-emissions-of-greenhouse-gases/"> Statista </a></p>
+
+
+
+<p> Rio Tinto Group is Anglo-Australian leading mining group which focuses on "finding, mining and processing the Earth's mineral resources", according to the company's description. As a consequence, they produce iron, coppr, diamonds, gold and much more. The multinational company currently has it's organisatial centre in London, United Kingdom. Following the company's pressure from the inventors regarding the large greenhouse gas emissions, they set a net zero goal by 2050. The Rio Tinto Group commited to spending 1 billion US$ in order to cut down the emssions in the following five years. In the chart above a continous decrease can be noticed starting from the 2012 year. Furthermore, a decrease of 15 million metric tons occured over a duration of ten years, 2009-2019.   </p>
+
+
+  <h3> How is climate change affecting London?</h3>
+
+  <p>As we all know the climate is constantly changing. As a consequence, according to the UK government, the summers became hotter and drier, while the winters became warmer and wetter. These results are believed to be caused by people’s activities, which ultimately lead to emission of greenhouse gases (i.e. carbon dioxide).
+  </p>
+
+  <p> The government’s response to this issue involves reducing the city’s greenhouse gas emissions in order to stop additional developing, as well as adjusting to the new climate conditions.
+  </p>
+
+  <p> Firstly, in order to tackle the latter issue the Mayor set the goal for London to achieve a zero level of carbon by 2050. As found in the governmental research, 80% of the gas emissions are a result of powering and heating buildings by burning fossil fuels, while the remaining part results from transport. More information related to the Mayor’s initiative, London Environment Strategy, to solve this problem involves:
+  </p>
+
+  <div class="w3-col m9 w3-margin-bottom">
+    <div class="w3-blue">
+
+      <div class="w3-container">
+
+  <p class="w3-text-white">■ our energy efficiency programmes are cutting London’s energy use from buildings</p>
+  <p class="w3-text-white">■ our energy supply programmes are working to supply more of London’s energy locally so it is more secure, affordable and low carbon</p>
+  <p class="w3-text-white">■ we’re supporting the use of low carbon hydrogen to power transport and heat and power buildings</p>
+    <p class="w3-text-white">■ we’re working with Transport for London to cut energy use from transport and use new technologies to cut emission</p>
+      <p class="w3-text-white">■ we’re measuring the amount of greenhouses gases in London every year through the London Energy and Greenhouse Gas Inventory</p>
+        <p class="w3-text-white">■ we’re also increasing jobs and investment into our climate change programmes through our green economy work</p>
+
+
+
+  <p class="w3-opacity w3-text-white">Credits: <a href="https://www.london.gov.uk/what-we-do/environment/climate-change/climate-change-and-weather"> Gov.uk</a></p>
+
+  </div>
+  </div>
+  </div>
+
+  </div>
+
+<div class="w3-container">
+
+  <p> Secondly, the Mayor’s plan for adapting to the extreme climate changes that were previosly mentioned, involves taking into consideration the high risk sitations, such as floods, droughts and heat. The latter weather conditions are belived to be become more frequent and serious, if we do not step in. Therefore, in the Mayor’s plan for climate change, Managing Risks and Increasing Resilience, the following steps are explored:
+  </p>
+
+  <div class="w3-col m9 w3-margin-bottom">
+    <div class="w3-blue">
+
+      <div class="w3-container">
+
+  <p class="w3-text-white">■ helping to reduce flood risk in London through our Drain London programme</p>
+  <p class="w3-text-white">■ helping London to cope with droughts through our water supply programmes</p>
+  <p class="w3-text-white">■ supporting more green roofs, green walls and local green spaces to help London cope with overheating, flooding and drought</p>
+    <p class="w3-text-white">■ helping to reduce heat risk</p>
+
+
+  <p class="w3-opacity w3-text-white">Credits:<a href="https://www.london.gov.uk/what-we-do/environment/climate-change/climate-change-and-weather">Gov.uk</a></p>
+
+  </div>
+  </div>
+  </div>
+
+  </div>
+<br>
+<div class="w3-container">
+<h3> Siemens Smart Grids: driving energy intelligence </h3>
+<br>
+<iframe width="699" height="393" src="https://www.youtube.com/embed/Jf1BB4EN36g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+  <p> Siemens initiative involves integrating smart energy within the energy supply as a more effective, secure and adaptable source. However, renewable supplies can be harder to integrate in the current structure. Therefore, Siemens proposes decentralized power generation and intelligent storage in order to permit society to control their electricity. Moreover, due to the growing usage of renewable energy power, the respective systems must be able of “managing multi-directional power flows, highly volatile power generation, and large variations in demand”. Thus, a smart infrastructure that can adapt the growing complexity of the model is sought. </p>
+
+  <div class="w3-col m9 w3-margin-bottom">
+    <div class="w3-blue">
+
+      <div class="w3-container">
+
+  <p class="w3-text-white">“Smart grids are shaping opportunities for a new energy age: They automatically balance demand and generation, handle multi-directional power flows and ensure the energy transition to seamlessly incorporate photovoltaics and other renewables, eMobility charging and energy storage into the energy ecosystem.”</p>
+
+<p class="w3-opacity w3-text-white"><a href="https://new.siemens.com/global/en/products/energy/topics/smart-grid.html">-Siemens</a></p>
+
+  </div>
+  </div>
+  </div>
+
+
+<br>
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Smart Water.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>London’s water systems are mainly managed by four companies: Affinity Water, Thames Water, Essex and Suffolk Water, and Sutton and East Surrey Water. However, according to Arup’s study, Thames Water is responsible for approximately 80% of the city’s market.</p>
+    <p>According to Thames Water, they established the largest and most effective water business in the United Kingdom. As a consequence, the programme involves collecting everyday 34 million litres of water in the 2015-2020 timeframe. In addition to this, Thames Water is involved in the <a href="https://www.water.org.uk/love-water/">Love Water Campaign</a>. The latter aims at raising awareness regarding current situation, as well as encouraging people to get involved in protecting it. In the video bellow Thames Water's future development for the following five years is described, which includes a series of adjustments to improve sustainability.</p>
+
+<iframe width="699" height="393" src="https://www.youtube.com/embed/AxMvkLGpBYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p>The United Kingdom Government is responding to this issue within The Department for International Trade (DIT). The latter in responsible for a variety of sources, resulting in the following: products, technology and consultancy. Therefore, the competence is achieved by the subsequent principles:</p>
+
+    <div class="w3-col m6 w3-margin-bottom">
+      <div class="w3-red">
+
+        <div class="w3-container">
+
+    <p class="w3-text-white">■ water sourcing</p>
+    <p class="w3-text-white">■ quality water delivery</p>
+    <p class="w3-text-white">■ treated water for reuse</p>
+      <p class="w3-text-white">■ balancing water usage</p>
+      <p class="w3-text-white">■ digital utility</p>
+      <p class="w3-text-white">■ flood resilience</p>
+        <p class="w3-text-white">■ advisory services</p>
+        <p class="w3-text-white">■ research, innovation and training</p>
+
+
+    <p class="w3-opacity w3-text-white">Credits:<a href="https://www.gov.uk/government/publications/water-and-treated-water/water-and-treated-water">Gov.uk</a></p>
+
+    </div>
+    </div>
+    </div>
+
+  </div>
+
+<div class="w3-container">
+
+  <p>Under the digital utility section, it is argued that currently there are a range of companies based in the United Kingdom that are working on the revolution of water systems by collecting data. Therefore, as stated, by using “leading-edge modelling and analytics tools”, the companies can enhance the overall customer experience by adapting “asset and operational data into actionable insights”. As a consequence, the automation appliances can lead to a decrease of operational costs, while busting accuracy and effectiveness at their full potential.</p>
+
+
+
+
+  <h3> How can analytic tools maximise efficiency? </h3>
+
+<p> Analytic tools can allow water companies to imagine a variety of scenarios from user experience to business models. Thus, they can quickly apply it to the situation and enhance the analysis process. As stated, the latter tools can be applied to operational and investment enterprises, resulting in an innovative manner of controlling how water is handled. Taking into consideration all the previous statements, applications that handle data, consist of the following: <p>
+
+  <div class="w3-col m10 w3-margin-bottom">
+    <div class="w3-red">
+
+      <div class="w3-container">
+
+  <p class="w3-text-white">■ water resources planning – simulating resource system behaviour, maximising yield, safeguarding supplies and minimising cost</p>
+  <p class="w3-text-white">■ water network pump scheduling – minimising operating costs by optimising pump operation in relation to energy tariff rates, demand forecasts and reservoir profiles, using real-time information</p>
+  <p class="w3-text-white">■ water and wastewater network control – providing control-room capability to optimise network performance using real-time information</p>
+    <p class="w3-text-white">■ capital and operational intervention planning – identifying optimal combined investment and operational intervention strategies to achieve defined serviceability and cost targets</p>
+
+
+  <p class="w3-opacity w3-text-white">Credits:<a href="https://www.gov.uk/government/publications/water-and-treated-water/water-and-treated-water">Gov.uk</a></p>
+
+  </div>
+  </div>
+  </div>
+
+
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-grey"><b>Conclusion</b></h1>
+    <hr style="width:50px;border:5px solid grey" class="w3-round">
+    <p>To conclude London has the potential for a huge development within the smart city area. Nevertheless, sustainability has to be considered at all stages. As the market is rapidly growing and industries are developing more projects, innovative and exciting changes will be seen in the future. With the implementation of a smart city dashboard, people will gain access to the information, enabling them to be part of the ecosystem. However, we all must proceed carefully while adjusting and fitting all needs. </p>
+
+</div>
+
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-grey"><b>Comment.</b></h1>
+    <hr style="width:50px;border:5px solid grey" class="w3-round">
+    <p>Comment bellow your opinion or findings about London's sustainabilty potential!</p>
+    <form action="/action_page.php" target="_blank">
+
+        <label>Comment</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <br>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-grey w3-margin-bottom">Publish</button>
+    </form>
+  </div>
+
+  <head>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+        google.charts.load('current', {'packages':['bar']});
+        google.charts.setOnLoadCallback(drawStuff);
+
+        function drawStuff() {
+          var data = new google.visualization.arrayToDataTable([
+            ['Company', 'Value'],
+            ["Veolia Environmental Services", 1500],
+            ["Biffa Group", 1076.7],
+            ["Suez Environment UK", 798],
+            ["Viridor (Pennon Group)", 788.9],
+            ["FCC Environment (FCC)", 670.4],
+            ["Amey Environmental (Ferrovial)", 336],
+            ["DS Smith Recycling UK", 283.8],
+            ["Renewi", 176.4],
+            ["SRCL (Stericycle)", 166],
+            ["Enva group", 148]
+          ]);
+
+          var options = {
+            title: 'Leading UK waste management service companies by revenue (2017-2018)',
+            width: 900,
+            legend: { position: 'none' },
+            chart: { title: 'Leading UK waste management service companies by revenue (2017-2018)',
+                     subtitle: 'value in million GBP' },
+            bars: 'horizontal', // Required for Material Bar Charts.
+            axes: {
+              x: {
+                0: { side: 'top', label: 'million GBP'} // Top x-axis.
+              }
+            },
+            bar: { groupWidth: "90%" }
+          };
+
+          var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+          chart.draw(data, options);
+        };
+      </script>
+    </head>
+    <body>
+      <div id="top_x_div" style="width: 900px; height: 500px;"></div>
+    </body>
+
+    <head>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load('current', {'packages':['line']});
+          google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+          var data = new google.visualization.DataTable();
+          data.addColumn('number', 'Year');
+          data.addColumn('number', 'Greenhouse Gas Emissions');
+
+
+          data.addRows([
+            [2009,  41.1],
+            [2010,  43.1],
+            [2011,  43.4],
+            [2012,  40.6],
+            [2013,  37.4],
+            [2014,   33.8],
+            [2015,   31.7],
+            [2016,  32],
+            [2017,  30.6],
+            [2018, 28.2],
+            [2019,  26.4],
+
+          ]);
+
+          var options = {
+            chart: {
+              title: "Rio Tinto's greenhouse gas emissions (2009-2019)",
+              subtitle: "in million metric tons"
+            },
+            width: 900,
+            height: 500,
+            axes: {
+              x: {
+                0: {side: 'top'}
+              }
+            }
+          };
+
+          var chart = new google.charts.Line(document.getElementById('line_top_x'));
+
+          chart.draw(data, google.charts.Line.convertOptions(options));
+        }
+      </script>
+    </head>
+    <body>
+      <div id="line_top_x"></div>
+    </body>
+
+
+
+
+
+
+
+
+
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
